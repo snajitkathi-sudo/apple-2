@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://raw.githubusercontent.com/sojijr/valentine-website/main/public/images/favicon.png">
+    <link rel="icon" href="/public/images/favicon.png" type="image/x-icon" />  
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="/public/style.css">
+  </head>
+  <body>
+    <div id="page-background" aria-hidden="true"></div>
+    <div id="page-vignette" aria-hidden="true"></div>
+    <div id="frame-corners" aria-hidden="true"><span class="corner-bl">♥</span><span class="corner-br">♥</span></div>
+    <div id="decorations" aria-hidden="true"></div>
+    <div id="carousel-wrapper">
+      <div class="carousel-banner">
+        <span class="carousel-banner-text">Click on the images to see something cool</span>
+      </div>
+      <div class="carousel-row">
+        <button type="button" id="carousel-prev" class="carousel-arrow carousel-arrow-left" aria-label="Previous image">‹</button>
+        <div id="collage-layer"></div>
+        <button type="button" id="carousel-next" class="carousel-arrow carousel-arrow-right" aria-label="Next image">›</button>
+      </div>
+      <div class="carousel-footer" aria-hidden="true"><span class="carousel-footer-hearts">♥ ♥ ♥</span></div>
+    </div>
+    <div id="review-overlay" class="caption-overlay hidden" aria-hidden="true">
+      <div id="review-box" class="caption-box review-box">
+        <h2 class="review-title">All the messages</h2>
+        <div id="review-content" class="review-content"></div>
+        <button type="button" id="review-close" class="caption-close" aria-label="Close">×</button>
+      </div>
+    </div>
+    <div id="caption-overlay" class="caption-overlay hidden" aria-hidden="true">
+      <div id="caption-box" class="caption-box">
+        <h2 id="caption-title"></h2>
+        <p id="caption-date" class="caption-date"></p>
+        <p id="caption-text"></p>
+        <button type="button" id="caption-close" class="caption-close" aria-label="Close">×</button>
+      </div>
+    </div>
+    <canvas id="starfield"></canvas>
+    <div class="bottom-buttons">
+      <button id="reviewTextButton" class="secondary-btn">Review Text</button>
+      <button id="valentinesButton">Click Me! ❤</button>
+    </div>
+    <audio id="bgMusic" loop preload="auto">
+      <source src="/public/audio/background.mp3" type="audio/mpeg">
+      <source src="/public/audio/background.ogg" type="audio/ogg">
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>

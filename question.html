@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Will you be my Valentine?</title>
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/public/question.css" />
+  </head>
+  <body>
+    <div id="page-background" aria-hidden="true"></div>
+    <div id="page-vignette" aria-hidden="true"></div>
+    <div id="frame-corners" aria-hidden="true"><span class="corner-bl">♥</span><span class="corner-br">♥</span></div>
+    <div id="decorations" aria-hidden="true"></div>
+
+    <main class="question-stage">
+      <div id="envelope" class="envelope drop-in" role="button" tabindex="0" aria-label="Open the envelope">
+        <div class="env-back"></div>
+        <div class="env-flap"></div>
+        <div class="env-front"></div>
+        <div class="env-letter">
+          <div class="env-letter-inner">
+            <div class="env-seal">💌</div>
+            <div class="env-letter-line"></div>
+            <div class="env-letter-line short"></div>
+            <div class="env-letter-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <section id="question-card" class="question-card hidden" aria-hidden="true">
+        <h1 class="question-title">Will you be my Valentine?</h1>
+        <div class="question-buttons">
+          <button id="yesBtn" class="btn yes">Yes</button>
+          <button id="noBtn" class="btn no">No</button>
+        </div>
+        <p id="answerText" class="answer-text" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="/public/question.js"></script>
+  </body>
+</html>
+
